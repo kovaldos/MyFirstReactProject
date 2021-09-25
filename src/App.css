@@ -1,43 +1,46 @@
+body {
+   background: url(./img/facebook_cover_photo_2.png) center no-repeat;
+   background-size: cover;
+}
 .app-wrapper {
-  display: grid;
-  grid-template-rows: 90px 1fr;
-  grid-template-columns: 3fr 8fr;
-  grid-gap: 5px;
-  grid-template-areas: 
-  "header header"
-  "aside main";
-  background-color: rgba(109, 118, 158, 0.418); 
+   display: grid;
+   grid-template-rows: 90px 1fr;
+   grid-template-columns: 3fr 12fr;
+   grid-gap: 5px;
+   grid-template-areas:
+      "header header"
+      "aside main";
 }
 
 .header {
-  grid-area: header;
-  background-color: rgba(103, 189, 192, 0.616);
-  padding: 10px;
-  display: flex;
-  align-items: center;
+   grid-area: header;
+   background-color: rgba(41, 0, 137, 0.8);
+   padding: 10px;
+   display: flex;
+   align-items: center;
 }
 
 .header__logo {
-  max-width: 80px;
-  width: 100%;
+   max-width: 120px;
+   width: 100%;
 }
 
 .menu {
-  grid-area: aside;
-  background-color: aqua;
+   grid-area: aside;
+   background-color: rgba(41, 0, 137, 0.8);;
 }
 
 .main {
-  grid-area: main;
-  background-color: aquamarine;
+   grid-area: main;
+   background-color: rgba(157, 126, 230, 0.76);
 }
 
 .main__img-box {
-  width: 100%;
+   width: 100%;
 }
 
 .main__img {
-  width: 100%;
-  object-fit: cover;
-  vertical-align: top;
+   width: 100%;
+   object-fit: cover;
+   vertical-align: top;
 }

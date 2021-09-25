@@ -1,39 +1,18 @@
 import React from "react";
+import "./_nullstyle.css";
 import "./App.css";
-import logo from "./img/logo.jpeg"
+import Header from "./components/Header";
+import Menu from "./components/Menu";
+import Main from "./components/Main";
 
 const App = () => {
-  return (
-    <div className="app-wrapper">
-      <header className="header">
-        <img className="header__logo" src= {logo} alt="logo" />
-      </header>
-      <nav className="menu">
-        <ul className="menu__list">
-          <li>
-            <a href="#" className="menu__link">News</a>
-          </li>
-          <li>
-            <a href="#" className="menu__link">Feed</a>
-          </li>
-          <li>
-            <a href="#" className="menu__link">Messages</a>
-          </li>
-          <li>
-            <a href="#" className="menu__link">Profile</a>
-          </li>
-          <li>
-            <a href="#" className="menu__link">Settings</a>
-          </li>
-        </ul>
-      </nav>
-      <main className="main">
-        <div className="main__img-box">
-          <img src="https://picsum.photos/1920/1080" alt="main-background-image" className="main__img" />
-        </div>
-      </main>
-    </div>
-  );
+   return (
+      <div className="app-wrapper">
+         <Header />
+         <Menu />
+         <Main />
+      </div>
+   );
 };
 
 export default App;
