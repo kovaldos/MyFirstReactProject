@@ -5,42 +5,10 @@ body {
 .app-wrapper {
    display: grid;
    grid-template-rows: 90px 1fr;
-   grid-template-columns: 3fr 12fr;
+   grid-template-columns: 2fr 10fr 3fr;
    grid-gap: 5px;
    grid-template-areas:
-      "header header"
-      "aside main";
+      "header header header"
+      "menu main aside";
 }
 
-.header {
-   grid-area: header;
-   background-color: rgba(41, 0, 137, 0.8);
-   padding: 10px;
-   display: flex;
-   align-items: center;
-}
-
-.header__logo {
-   max-width: 120px;
-   width: 100%;
-}
-
-.menu {
-   grid-area: aside;
-   background-color: rgba(41, 0, 137, 0.8);;
-}
-
-.main {
-   grid-area: main;
-   background-color: rgba(157, 126, 230, 0.76);
-}
-
-.main__img-box {
-   width: 100%;
-}
-
-.main__img {
-   width: 100%;
-   object-fit: cover;
-   vertical-align: top;
-}

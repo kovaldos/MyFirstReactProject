@@ -4,6 +4,7 @@ import "./App.css";
 import Header from "./components/Header";
 import Menu from "./components/Menu";
 import Main from "./components/Main";
+import Aside from "./components/Asisde";
 
 const App = () => {
    return (
@@ -11,6 +12,7 @@ const App = () => {
          <Header />
          <Menu />
          <Main />
+         <Aside />
       </div>
    );
 };
