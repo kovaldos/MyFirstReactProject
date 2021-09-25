@@ -1,32 +1,32 @@
 import React from "react";
-import "./Menu.css";
+import style from "./Menu.module.sass";
 
 const Menu = () => {
 	return (
-		<nav className="menu">
-			<ul className="menu__list">
+		<nav className={style.menu}>
+			<ul className={style.list}>
 				<li>
-					<a href="#" className="menu__link">
+					<a href="#" className={style.link}>
 						Feed
 					</a>
 				</li>
 				<li>
-					<a href="#" className="menu__link">
+					<a href="#" className={style.link}>
 						Music
 					</a>
 				</li>
 				<li>
-					<a href="#" className="menu__link">
+					<a href="#" className={style.link}>
 						Messages
 					</a>
 				</li>
 				<li>
-					<a href="#" className="menu__link">
+					<a href="#" className={style.link}>
 						Profile
 					</a>
 				</li>
 				<li>
-					<a href="#" className="menu__link">
+					<a href="#" className={style.link}>
 						Settings
 					</a>
 				</li>

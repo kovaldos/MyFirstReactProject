@@ -1,5 +1,5 @@
 import React from "react";
-import "./Main.css"
+import style from "./Main.module.sass"
 
 const Main = () => {
 	return (

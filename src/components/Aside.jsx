@@ -1,10 +1,10 @@
 import React from "react";
-import "./Aside.css";
+import style from "./Aside.module.sass";
 
 const Aside = () => {
 	return (
 		<aside className="aside">
-			<div className="aside__item"></div>
+			<div className="item"></div>
 		</aside>
 	)
 }
