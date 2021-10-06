@@ -1,19 +1,15 @@
 import React from "react";
+import Profile from "../Profile/Profile";
+import MainImgBox from "./Main-img-bg/MainImgBox";
 import style from "./Main.module.sass"
 
 const Main = () => {
 	return (
-		<main className={style.main}>
-			<div className={style.main__content}>
-				<div className={style.main__imgBox}>
-					<img
-						className={style.main__img}
-						src="https://picsum.photos/1920/1080"
-						alt="main-background-image"
-					/>
-				</div>
+		<main className={style.Main}>
+			<div className={style.Main__content}>
+				<MainImgBox />
+				<Profile />
 			</div>
-
 		</main>
 	)
 }
