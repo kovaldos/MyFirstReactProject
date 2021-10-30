@@ -3,13 +3,16 @@ import style from "./Post.module.sass";
 
 const Post = () => {
 	return (
-		<div className={style.Post__container}>
-			<div className={style.Post__content}>
-				<div className={style.Post__imgBox}>
-					<img src="/img/avatar.jpg" alt="User avatar" className={style.Post__Avatar} />
-				</div>
-				<div className={style.Post__text}>
-					<span className={style.Post__textContent}>Hello, React!</span>
+		<div className={style.container}>
+			<div className={style.content}>
+				<div className={style.avatarBox}>
+					<div className={style.imgBox}>
+						<img
+						src="https://picsum.photos/100" alt="User avatar" className={style.avatar} />
+					</div>
+					</div>	
+				<div className={style.textBlock}>
+					<span className={style.textContent}>Hello, React!</span>
 				</div>
 			</div>
 		</div>

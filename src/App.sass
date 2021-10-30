@@ -1,10 +1,9 @@
-@import ./_nullstyle
-@import ./_variables
-@import ./_colors
 
+@import ./_variables
+   
 body
    background: $whiteColor
-   font-size: calc( 10px + 1vmin )
+   font-size: calc(10px + 1vmin)
 
 #root
    height: 100vh
@@ -13,7 +12,8 @@ body
 .app-wrapper
    flex: 1 1 auto
    display: grid
-   grid-auto-rows: minmax(100px, auto)
-   grid-template-columns: 2fr 10fr 3fr
+   grid-template-rows: 120px
+   grid-template-columns: 2fr 8fr 2fr
    grid-gap: 5px
-   grid-template-areas: "header header header" "menu main aside"
+   grid-template-areas: "header header header" "menu main aside" "footer footer footer" 
+   padding: 0 5px

@@ -1,15 +1,31 @@
 @import ../../../../_variables
-@import ../../../../_nullstyle
-	
-.Post
-	&__container
+
+.container
 		width: 100%
-		padding: 10px
-	&__content
+.content
 		border: 1px solid grey
 		border-radius: 5px
-	&__imgBox
 		display: flex
-		justify-content: space-between
+		justify-content: flex-start
 		align-items: center
-		border-radius: 50%	
+		column-gap: 10px 
+		padding: 10px
+		min-height: 105px
+.avatarBox
+		display: flex
+		justify-content: center
+		align-items: center
+		flex: 0 0 80px
+.imgBox
+		border-radius: 50%
+		background-color: aqua
+		img
+			border-radius: 50%
+.textBlock
+		width: 100%
+		min-height: 80px
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+.textContent
+
