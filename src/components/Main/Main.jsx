@@ -1,13 +1,13 @@
 import React from "react";
 import Profile from "../Profile/Profile";
-import MainImgBox from "./Main-img-bg/MainImgBox";
+import MainBg from "./Main-img-bg/MainBg";
 import style from "./Main.module.sass"
 
 const Main = () => {
 	return (
 		<main className={style.main}>
 			<div className={style.content}>
-				<MainImgBox />
+				<MainBg />
 				<Profile />
 			</div>
 		</main>

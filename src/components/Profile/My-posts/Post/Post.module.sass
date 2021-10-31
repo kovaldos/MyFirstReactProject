@@ -2,6 +2,9 @@
 
 .container
 		width: 100%
+		margin: 0 0 10px 0
+		&:last-of-type
+			margin: 0
 .content
 		border: 1px solid grey
 		border-radius: 5px
@@ -28,4 +31,28 @@
 		justify-content: flex-start
 		align-items: flex-start
 .textContent
+
+.likeAndShare
+	flex: 0 0 50px
+	display: flex
+	flex-direction: column
+	justify-content: flex-end
+	align-items: center
+	width: 100%
+	min-height: 15px
+
+.likeBlock,
+.shareBlock
+	width: 100%
+	display: flex
+	justify-content: center
+	align-items: center
+
+.like,
+.share
+	width: 50%
+	min-height: 15px
+	display: flex
+	justify-content: center
+	align-items: center
 

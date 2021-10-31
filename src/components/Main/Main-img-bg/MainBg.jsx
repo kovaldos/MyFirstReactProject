@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./MainImgBox.module.sass"
+import style from "./MainBg.module.sass"
 
-const MainImgBox = () => {
+const MainBg = () => {
 	return (
 		<div className={style.imgBox}>
 			<img
@@ -14,4 +14,4 @@ const MainImgBox = () => {
 	)
 }
 
-export default MainImgBox
+export default MainBg

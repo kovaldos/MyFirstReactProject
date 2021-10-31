@@ -5,7 +5,10 @@ import Post from "./Post/Post";
 const MyPosts = () => {
 	return (
 		<div className={style.container}>
-			<Post />
+			<Post message="Hi, it's my first post here" />
+			<Post message="Hi! I'm nube in React" />
+			<Post message="Hi! I think React is cool)" />
+
 		</div>
 	)
 }
