@@ -4,7 +4,7 @@ import style from "./Profile.module.sass";
 
 const Profile = () => {
 	return (
-		<div className={style.Profile__container}>
+		<div className={style.container}>
 			<MyPosts />
 		</div>
 	)

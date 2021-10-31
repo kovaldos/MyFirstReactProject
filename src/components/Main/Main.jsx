@@ -5,8 +5,8 @@ import style from "./Main.module.sass"
 
 const Main = () => {
 	return (
-		<main className={style.Main}>
-			<div className={style.Main__content}>
+		<main className={style.main}>
+			<div className={style.content}>
 				<MainImgBox />
 				<Profile />
 			</div>

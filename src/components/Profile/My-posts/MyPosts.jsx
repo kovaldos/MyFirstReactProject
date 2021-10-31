@@ -4,7 +4,7 @@ import Post from "./Post/Post";
 
 const MyPosts = () => {
 	return (
-		<div className={style.MyPosts__container}>
+		<div className={style.container}>
 			<Post />
 		</div>
 	)

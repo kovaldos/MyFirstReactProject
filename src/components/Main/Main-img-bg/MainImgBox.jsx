@@ -3,9 +3,9 @@ import style from "./MainImgBox.module.sass"
 
 const MainImgBox = () => {
 	return (
-		<div className={style.MainImgBox__imgBox}>
+		<div className={style.imgBox}>
 			<img
-				className={style.MainImgBox__img}
+				className={style.img}
 				src="https://picsum.photos/1920/1080"
 				alt="main-background-image"
 			/>
