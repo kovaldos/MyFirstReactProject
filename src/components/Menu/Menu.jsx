@@ -6,27 +6,27 @@ const Menu = () => {
 		<nav className={style.menu}>
 			<ul className={style.list}>
 				<li>
-					<a href="#s" className={style.link}>
+					<a href="/feed" className={style.link}>
 						Feed
 					</a>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<a href="/messages" className={style.link}>
 						Messages
 					</a>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<a href="/music" className={style.link}>
 						Music
 					</a>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<a href="/profile" className={style.link}>
 						Profile
 					</a>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<a href="/settings" className={style.link}>
 						Settings
 					</a>
 				</li>
