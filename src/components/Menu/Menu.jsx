@@ -1,30 +1,30 @@
 import React from "react";
 import style from "./Menu.module.sass";
+import {Link} from "react-router-dom";
 
 const Menu = () => {
 	return (
 		<nav className={style.menu}>
 			<ul className={style.list}>
 				<li>
-					<a href="#s" className={style.link}>
+					<Link to="/feed" className={style.link}>
 						Feed
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<Link to="/messages" className={style.link}>
 						Messages
-						Music
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<Link to="/profile" className={style.link}>
 						Profile
-					</a>
+					</Link>
 				</li>
 				<li>
-					<a href="#s" className={style.link}>
+					<Link to="/settings" className={style.link}>
 						Settings
-					</a>
+					</Link>
 				</li>
 			</ul>
 		</nav>
