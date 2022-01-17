@@ -12,12 +12,8 @@ const Menu = () => {
 				</li>
 				<li>
 					<a href="#s" className={style.link}>
-						Music
-					</a>
-				</li>
-				<li>
-					<a href="#s" className={style.link}>
 						Messages
+						Music
 					</a>
 				</li>
 				<li>
