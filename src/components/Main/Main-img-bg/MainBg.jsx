@@ -7,7 +7,7 @@ const MainBg = () => {
 			<img
 				className={style.img}
 				src="https://picsum.photos/1920/1080"
-				alt="main-background-image"
+				alt="main background"
 			/>
 		</div>
 
