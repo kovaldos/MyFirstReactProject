@@ -1,34 +1,33 @@
 import React from "react";
 import style from "./Menu.module.sass";
-import {Link} from "react-router-dom";
+import {NavLink} from "react-router-dom";
 
 const Menu = () => {
-	return (
-		<nav className={style.menu}>
-			<ul className={style.list}>
-				<li>
-					<Link to="/feed" className={style.link}>
-						Feed
-					</Link>
-				</li>
-				<li>
-					<Link to="/messages" className={style.link}>
-						Messages
-					</Link>
-				</li>
-				<li>
-					<Link to="/profile" className={style.link}>
-						Profile
-					</Link>
-				</li>
-				<li>
-					<Link to="/settings" className={style.link}>
-						Settings
-					</Link>
-				</li>
-			</ul>
-		</nav>
-	)
+    return (
+        <nav className={style.menu}>
+            <ul className={style.list}>
+                <li>
+                    <NavLink to="/feed" className={(navData) => navData.isActive ? style.active : style.link}>
+                        Feed
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/dialogs" className={(navData) => navData.isActive ? style.active : style.link}>Messages
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/profile" className={(navData) => navData.isActive ? style.active : style.link}>
+                        Profile
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/settings" className={(navData) => navData.isActive ? style.active : style.link}>
+                        Settings
+                    </NavLink>
+                </li>
+            </ul>
+        </nav>
+    )
 }
 
 export default Menu
