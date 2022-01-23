@@ -3,7 +3,7 @@
 .menu
   grid-area: menu
   background-color: $primaryColor
-  box-shadow: 0px 0px 5px 3px #312e2e52
+  box-shadow: 0 0 5px 3px $color-night-rider-translucent
   border-radius: 5px
 
 .list
@@ -12,13 +12,16 @@
 .item
   max-width: 75%
 
-.link
+.link,
+.linkActive
   padding: 20px
   margin: -20px
   color: #ffffff
+  transition: $transition-default
 
+.link
   &:hover
-    text-decoration: underline
+    font-weight: 500
 
-.active
-  text-decoration: underline
+.linkActive
+  font-weight: 700

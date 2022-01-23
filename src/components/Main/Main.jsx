@@ -1,15 +1,11 @@
 import React from "react";
+import {Routes, Route} from "react-router-dom";
 import MainBg from "./Main-img-bg/MainBg";
 import style from "./Main.module.sass"
 import Feed from "./Feed/Feed";
 import Dialogs from "./Dialogs/Dialogs";
 import Profile from "./Profile/Profile";
 import Settings from "./Settings/Settings";
-import {Routes, Route, Link} from "react-router-dom";
-
-
-
-
 
 const Main = () => {
     return (
