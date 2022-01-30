@@ -19,7 +19,9 @@ const Dialogs = () => {
                 </div>
             </div>
             <div className={[style.wrapper, style.wrapperRight].join(' ')}>
+                <div className={style.messages}>
 
+                </div>
             </div>
         </div>
     );
