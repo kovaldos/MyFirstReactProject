@@ -16,24 +16,38 @@
 .wrapper
   width: 100%
   height: 100%
+  border-radius: 5px
+  background: $whiteColor
+  box-shadow: 0 0 5px 3px $color-night-rider-translucent
+  padding: 15px
+  overflow: hidden
+
 
 .wrapperLeft
   max-width: 100%
-  display: grid
-  grid-template-columns: 1fr
-  grid-template-rows: repeat(6, 1fr)
-  grid-row-gap: 10px
-  overflow-y: auto
 
 .wrapperRight
   max-width: 100%
+
+.dialogs
+  width: 100%
+  height: 100%
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(auto-fit, minmax(90px, 1fr))
+  grid-row-gap: 15px
+  overflow-y: auto
 
 .dialogItem
   width: 100%
   height: 100%
   border-radius: 5px
-  background-color: $whiteColor
-  box-shadow: 0 0 5px 3px $color-night-rider-translucent
+  background-color: transparent
+  padding: 10px
+  font-size: 0.9em
+  border: 1px solid $primaryColor
+  &.active
+    border: 3px solid $primaryColor
 
 .dialogItemSpan
   color: $primaryColor
@@ -41,10 +55,22 @@
 .messages
   width: 100%
   height: 100%
-  background-color: $whiteColor
   border-radius: 5px
-  box-shadow: 0 0 5px 3px $color-night-rider-translucent
+  background-color: transparent
+  display: grid
+  grid-template-columns: 1fr
+  grid-template-rows: repeat(auto-fit, minmax(80px, 1fr))
+  grid-row-gap: 15px
+  overflow-y: auto
 
+.message
+  width: 100%
+  height: 100%
+  border-radius: 5px
+  background-color: transparent
+  padding: 10px
+  font-size: 0.9em
+  border: 1px solid $primaryColor
 
 
 
