@@ -1,4 +1,4 @@
-@import ./../../../Styles/_variables
+@import ./../../../Styles/variables
 
 .Dialogs
   width: 100%
@@ -34,7 +34,7 @@
   height: 100%
   display: grid
   grid-template-columns: 1fr
-  grid-template-rows: repeat(auto-fit, minmax(90px, 1fr))
+  grid-template-rows: repeat(7, 80px)
   grid-row-gap: 15px
   overflow-y: auto
 
@@ -57,21 +57,19 @@
   height: 100%
   border-radius: 5px
   background-color: transparent
-  display: grid
-  grid-template-columns: 1fr
-  grid-template-rows: repeat(auto-fit, minmax(80px, 1fr))
-  grid-row-gap: 15px
   overflow-y: auto
 
 .message
   width: 100%
-  height: 100%
+  height: auto
   border-radius: 5px
   background-color: transparent
   padding: 10px
   font-size: 0.9em
   border: 1px solid $primaryColor
-
+  &:not(:last-of-type)
+    margin-bottom: 15px
+    
 
 
 
